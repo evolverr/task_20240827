@@ -2,7 +2,7 @@
 ### Prerequisite
 - JDK 21
 - Spring boot 3.3.3
-- Gradle
+- Gradle 8.8
 - H2 DB
 - JPA
 
