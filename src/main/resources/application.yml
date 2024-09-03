@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+
+  profiles:
+    group:
+      local:
+        - db-local
+      dev:
+        - db-dev
+      prod:
+        - db-prod
+    include:
+      - db
+      - swagger
+      - actuator
